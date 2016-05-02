@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.z.startwar.MyActivity"
+>
+    <com.z.startwar.view.StarWarView
+            android:id="@+id/starwar_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/starwar_text"
+            android:textSize="30sp"
+            android:textColor="#ffffc92a"
+            app:angle="35"
+            app:endScrollMultiplier="4.5"
+            app:distanceFromText="200"/>
+
+    <SeekBar
+            android:visibility="gone"
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:max="100000"/>
+</LinearLayout>
+
